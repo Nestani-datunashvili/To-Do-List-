@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 30px;
+  background: rgb(254, 255, 230);
+  background: rgb(254, 255, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 255, 230, 0.8449754901960784) 13%,
+    rgba(255, 231, 234, 0.8449754901960784) 31%,
+    rgba(212, 203, 208, 0.7217261904761905) 67%,
+    rgba(191, 255, 241, 1) 91%
+  );
+  cursor: pointer;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  color: rgb(85, 203, 213);
+}
+.todo-img {
+  width: 100px;
+  height: 80px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(217, 255, 255);
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button {
+  padding: 16px 50px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 173, 173);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+ul li {
+  padding: 12px 8px 12px 50px;
+  font-size: 17px;
+  position: relative;
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  height: 28px;
+  width: 28px;
+  background-image: url(./img/sircle.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cheked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.cheked::before {
+  background-image: url(./img/checked.svg);
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.close:hover {
+  background-color: rgb(68, 173, 173);
+  color: #fff;
+  border-radius: 50%;
+}
